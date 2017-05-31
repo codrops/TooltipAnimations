@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tooltip Animations | Codrops</title>
+		<meta name="description" content="Some inspiration for tooltip shapes and animations with SVG and anime.js" />
+		<meta name="keywords" content="svg, animation, tooltip, shape, elastic, inspiration, web design, web development, javascript" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Overpass+Mono:400,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script>document.documentElement.className = 'js';</script>
+	</head>
+	<body>
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+			</symbol>
+		</svg>
+		<main>
+			<header class="codrops-header">
+				<div class="codrops-links">
+					<a class="codrops-icon codrops-icon--prev" href="https://tympanus.net/Development/MorphingBackgroundShapes/" title="Previous Demo"><svg class="icon icon--arrow"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow"></use></svg></a>
+					<a class="codrops-icon codrops-icon--drop" href="https://tympanus.net/codrops/?p=31283" title="Back to the article"><svg class="icon icon--drop"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-drop"></use></svg></a>
+				</div>
+				<h1 class="codrops-header__title">Tooltip Animations</h1>
+				<p class="codrops-header__tagline">Some ideas for tooltip shapes and animations</p>
+				<a class="github" href="https://github.com/codrops/TooltipAnimations/">/Github</a>
+			</header>
+			<div class="content">
+				<div class="grid">
+					<div class="grid__item">
+						<div class="tooltip tooltip--cora" data-type="cora">
+							<div class="tooltip__trigger" role="tooltip" aria-describedby="info-cora">
+								<span class="tooltip__trigger-text">Cora</span>
+							</div>
+							<div class="tooltip__base">
+								<svg class="tooltip__shape" width="100%" height="100%" viewBox="0 0 400 300"> 
+									<path d="M 199,21.9 C 152,22.2 109,35.7 78.8,57.4 48,79.1 29,109 29,142 29,172 45.9,201 73.6,222 101,243 140,258 183,260 189,270 200,282 200,282 200,282 211,270 217,260 261,258 299,243 327,222 354,201 371,172 371,142 371,109 352,78.7 321,57 290,35.3 247,21.9 199,21.9 Z"/>
+								</svg>
+								<div class="tooltip__content" id="info-cora">Be yourself; everyone else is already taken.</div>
+							</div><!-- /tooltip__base -->
+						</div><!-- / tooltip -->
+					</div><!-- / grid__item -->
+					<div class="grid__item">
+						<div class="tooltip tooltip--smaug" data-type="smaug">
+							<div class="tooltip__trigger" role="tooltip" aria-describedby="info-smaug">
+								<span class="tooltip__trigger-text">Smaug</span>
+							</div>
+							<div class="tooltip__base">
+								<svg class="tooltip__shape" width="100%" height="100%" viewBox="0 0 400 300">
+									<path d="M 314,100 C 313,100 312,100 311,100 L 89.5,100 C 55.9,100 29.1,121 29.1,150 29.1,178 53.1,201 89.5,201 L 184,201 200,223 217,201 311,201 C 344,201 371,178 371,150 371,122 346,99 314,100 Z"/>
+								</svg>
+								<div class="tooltip__content" id="info-smaug">Make love, not war!</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item">
+						<div class="tooltip tooltip--uldor" data-type="uldor">
+							<div class="tooltip__trigger" role="tooltip" aria-describedby="info-uldor">
+								<span class="tooltip__trigger-text">Uldor</span>
+							</div>
+							<div class="tooltip__base">
+								<svg class="tooltip__shape" width="100%" height="100%" viewBox="0 0 400 300">
+									<path d="M 79.5,66 C 79.5,66 128,106 202,105 276,104 321,66 321,66 321,66 287,84 288,155 289,226 318,232 318,232 318,232 258,198 200,198 142,198 80.5,230 80.5,230 80.5,230 112,222 111,152 110,82 79.5,66 79.5,66 Z"/>
+								</svg>
+								<div class="tooltip__content" id="info-uldor">It does not do to dwell on dreams and forget to live.</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item">
+						<div class="tooltip tooltip--dori" data-type="dori">
+							<div class="tooltip__trigger" role="tooltip" aria-describedby="info-dori">
+								<span class="tooltip__trigger-text">Dori</span>
+							</div>
+							<div class="tooltip__base">
+								<svg class="tooltip__shape" width="100%" height="100%" viewBox="0 0 400 300">
+									<path d="M 22,108 22,236 C 22,236 64,216 103,212 142,208 184,212 184,212 L 200,229 216,212 C 216,212 258,207 297,212 336,217 378,236 378,236 L 378,108 C 378,108 318,83.7 200,83.7 82,83.7 22,108 22,108 Z"/>
+								</svg>
+								<div class="tooltip__content" id="info-dori">If you judge people, you have no time to love them.</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item">
+						<div class="tooltip tooltip--gram" data-type="gram">
+							<div class="tooltip__trigger" role="tooltip" aria-describedby="info-gram">
+								<span class="tooltip__trigger-text">Gram</span>
+							</div>
+							<div class="tooltip__base">
+								<svg class="tooltip__shape" width="100%" height="100%" viewBox="0 0 400 300">
+									<path d="M 92.4,79 C 136,79 154,115 200,116 246,117 263,80.4 308,79 353,77.6 381,111 381,150 381,189 346,220 308,221 270,222 236,188 200,188 164,188 130,222 92.4,221 54.4,220 19,189 19,150 19,111 48.6,79 92.4,79 Z"/>
+								</svg>
+								<div class="tooltip__content" id="info-gram">You can only be afraid of what you think you know.</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item">
+						<div class="tooltip tooltip--indis" data-type="indis">
+							<div class="tooltip__trigger" role="tooltip" aria-describedby="info-indis">
+								<span class="tooltip__trigger-text">Indis</span>
+							</div>
+							<div class="tooltip__base">
+								<svg class="tooltip__shape" width="100%" height="100%" viewBox="0 0 400 300">
+									<path d="M 44.5,24 C 138,4.47 246,-6.47 356,24 367,26.9 376,32.9 376,44 L 376,256 C 376,267 367,279 356,276 231,240 168,241 44.5,276 33.8,279 24.5,267 24.5,256 L 24.5,44 C 24.5,32.9 33.6,26.3 44.5,24 Z"/>
+								</svg>
+								<div class="tooltip__content" id="info-indis">Logic will get you from A to Z; imagination will get you everywhere.</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item">
+						<div class="tooltip tooltip--walda" data-type="walda">
+							<div class="tooltip__trigger" role="tooltip" aria-describedby="info-walda">
+								<span class="tooltip__trigger-text">Walda</span>
+							</div>
+							<div class="tooltip__base">
+								<div class="tooltip__deco"></div>
+								<div class="tooltip__content" id="info-walda">
+									<span class="tooltip__letters">A day without sunshine <br/>is like, you know, night.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item">
+						<div class="tooltip tooltip--narvi" data-type="narvi">
+							<div class="tooltip__trigger" role="tooltip" aria-describedby="info-narvi">
+								<span class="tooltip__trigger-text">Narvi</span>
+							</div>
+							<div class="tooltip__base">
+								<svg class="tooltip__shape" width="100%" height="100%" viewBox="0 0 400 300">
+									<path class="path-narvi" d="M 307,150 199,212 92.5,274 92.7,150 92.5,26.2 200,88.4 Z"/>
+								</svg>
+								<div class="tooltip__content" id="info-narvi">Life isn't about finding yourself. Life is about creating yourself.</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item">
+						<div class="tooltip tooltip--amras" data-type="amras">
+							<div class="tooltip__trigger" role="tooltip" aria-describedby="info-amras">
+								<span class="tooltip__trigger-text">Amras</span>
+							</div>
+							<div class="tooltip__base">
+								<svg class="tooltip__shape" width="100%" height="100%" viewBox="0 0 400 300">
+									<path class="path-amras-2" d="M 293,106 A 90.1,90.1 0 0 1 203,197 90.1,90.1 0 0 1 112,106 90.1,90.1 0 0 1 203,16.2 90.1,90.1 0 0 1 293,106 Z"/>
+									<path class="path-amras-3" d="M 324,66.2 A 46.9,46.9 0 0 1 277,113 46.9,46.9 0 0 1 230,66.2 46.9,46.9 0 0 1 277,19.3 46.9,46.9 0 0 1 324,66.2 Z"/>
+									<path class="path-amras-1" d="M 180,111 A 67.2,67.2 0 0 1 112,178 67.2,67.2 0 0 1 45.9,111 67.2,67.2 0 0 1 112,43.5 67.2,67.2 0 0 1 180,111 Z"/>
+									<path class="path-amras-4" d="M 371,98.6 A 52.7,52.7 0 0 1 318,152 52.7,52.7 0 0 1 266,98.6 52.7,52.7 0 0 1 318,45.9 52.7,52.7 0 0 1 371,98.6 Z"/>
+									<path class="path-amras-9" d="M 375,167 A 66.8,55.1 0 0 1 308,222 66.8,55.1 0 0 1 241,167 66.8,55.1 0 0 1 308,112 66.8,55.1 0 0 1 375,167 Z"/>
+									<path class="path-amras-5" d="M 187,199 A 52,52 0 0 1 136,251 52,52 0 0 1 84.1,199 52,52 0 0 1 136,147 52,52 0 0 1 187,199 Z"/>
+									<path class="path-amras-6" d="M 287,217 A 66.8,66.8 0 0 1 221,284 66.8,66.8 0 0 1 154,217 66.8,66.8 0 0 1 221,150 66.8,66.8 0 0 1 287,217 Z"/>
+									<path class="path-amras-7" d="M 132,168 A 53.9,53.9 0 0 1 78.7,222 53.9,53.9 0 0 1 24.8,168 53.9,53.9 0 0 1 78.7,114 53.9,53.9 0 0 1 132,168 Z"/>
+									<path class="path-amras-8" d="M 343,211 A 48.7,48.7 0 0 1 295,260 48.7,48.7 0 0 1 246,211 48.7,48.7 0 0 1 295,163 48.7,48.7 0 0 1 343,211 Z"/>
+								</svg>
+								<div class="tooltip__content" id="info-amras">Real learning comes about when the competitive spirit has ceased.</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item">
+						<div class="tooltip tooltip--hador" data-type="hador">
+							<div class="tooltip__trigger" role="tooltip" aria-describedby="info-hador">
+								<span class="tooltip__trigger-text">Hador</span>
+							</div>
+							<div class="tooltip__base">
+								<svg class="tooltip__shape" width="100%" height="100%" viewBox="0 0 400 300">
+									<path class="path-hador-1" d="M 154,283 A 6.12,6.12 0 0 1 149,290 6.12,6.12 0 0 1 142,286 6.12,6.12 0 0 1 146,278 6.12,6.12 0 0 1 154,283 Z"/>
+									<path class="path-hador-2" d="M 167,265 A 7.83,7.83 0 0 1 162,276 7.83,7.83 0 0 1 152,270 7.83,7.83 0 0 1 157,261 7.83,7.83 0 0 1 167,265 Z"/>
+									<path class="path-hador-3" d="M 183,244 A 11.9,11.9 0 0 1 174,258 11.9,11.9 0 0 1 160,250 11.9,11.9 0 0 1 168,235 11.9,11.9 0 0 1 183,244 Z"/>
+									<path class="path-hador-4" d="M 327,120 A 127,111 0 0 1 200,231 127,111 0 0 1 72.9,120 127,111 0 0 1 200,9.44 127,111 0 0 1 327,120 Z"/>
+								</svg>
+								<div class="tooltip__content" id="info-hador">Acquiring knowledge is a form of imitation.</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item">
+						<div class="tooltip tooltip--malva" data-type="malva">
+							<div class="tooltip__trigger" role="tooltip" aria-describedby="info-malva">
+								<span class="tooltip__trigger-text">Malva</span>
+							</div>
+							<div class="tooltip__base">
+								<svg class="tooltip__shape" width="100%" height="100%" viewBox="0 0 400 300">
+									<path d="M 94.9,90.2 101,30.7 163,72.3 229,17.7 263,68.2 319,55.9 315,102 375,144 316,175 340,228 265,220 251,263 180,233 143,282 98.9,218 57.5,236 82,189 25,170 82.8,141 48.7,93.7 Z"/>
+								</svg>
+								<div class="tooltip__content" id="info-malva">Never go to bed mad. Stay up and fight!</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item">
+						<div class="tooltip tooltip--sadoc" data-type="sadoc">
+							<div class="tooltip__trigger" role="tooltip" aria-describedby="info-sadoc">
+								<span class="tooltip__trigger-text">Sadoc</span>
+							</div>
+							<div class="tooltip__base">
+								<svg class="tooltip__shape" width="100%" height="100%" viewBox="0 0 400 300">
+									<path d="M 32.1,42.7 54.5,257 185,257 193,269 200,282 207,269 214,257 342,257 368,23.9 Z"/>
+								</svg>
+								<div class="tooltip__content" id="info-sadoc">We don't see things as they are, we see them as we are.</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- /grid -->
+			</div>
+			<!-- Related demos -->
+			<section class="content content--related">
+				<p>If you enjoyed this demo you might also like:</p>
+				<a class="media-item" href="https://tympanus.net/Development/TooltipStylesInspiration/">
+					<img class="media-item__img" src="img/related/TooltipStyles.jpg">
+					<h3 class="media-item__title">Tooltip Styles</h3>
+				</a>
+				<a class="media-item" href="https://tympanus.net/Development/ElasticProgress/">
+					<img class="media-item__img" src="img/related/ElasticProgress.jpg">
+					<h3 class="media-item__title">Elastic Progress</h3>
+				</a>
+			</section>
+		</main>
+		<script src="js/anime.min.js"></script>
+		<script src="js/charming.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

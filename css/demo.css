@@ -1,0 +1,169 @@
+*,
+*::after,
+*::before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Overpass Mono', monospace;
+	color: #666;
+	background: #1d1f1e;
+}
+
+a {
+	text-decoration: none;
+	color: #6fbb95;
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	color: #fff;
+}
+
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+/* Icons */
+.icon {
+	display: block;
+	width: 1.5em;
+	height: 1.5em;
+	margin: 0 auto;
+	fill: currentColor;
+}
+
+/* Header */
+.codrops-header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+	padding: 1.5em 1.5em 4em;
+	text-align: left;
+}
+
+.codrops-header__title {
+	font-size: 1.15em;
+	margin: 0;
+	padding: 0 0.5em;
+}
+
+.github {
+	font-size: 0.85em;
+	font-weight: bold;
+}
+
+.codrops-header__tagline {
+	font-size: 0.85em;
+	width: 100%;
+	margin: 0 0 0.5em;
+	color: #989898;
+}
+
+.codrops-header__tagline::before {
+	content: '> ';
+}
+
+/* Top Navigation Style */
+.codrops-links {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.codrops-links::after {
+	content: '';
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	width: 1px;
+	height: 60%;
+	background: #b0adad;
+	transform: rotate3d(0, 0, 1, 22.5deg);
+}
+
+.codrops-icon {
+	display: inline-block;
+	margin: 0.25em 0 0.25em 0.25em;
+	padding: 0.35em 0 0.35em 0.35em;
+}
+
+.codrops-icon:first-child {
+	margin: 0.25em 0.25em 0.25em 0;
+	padding: 0.35em 0.35em 0.35em 0;
+}
+
+/* Grid */
+.grid {
+	display: grid;
+	max-width: 1100px;
+	margin: 0 auto;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-auto-rows: 260px;
+}
+
+.grid__item {
+	padding: 1em;
+	text-align: center;
+	display: grid;
+    align-items: center;
+	justify-items: center;
+}
+
+/* Content */
+.content {
+	padding: 5em 0 3em;
+	-webkit-touch-callout: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+/* Related demos */
+.content--related {
+	text-align: center;
+	font-size: 0.85em;
+	padding: 3em 1em 6em;
+}
+
+.media-item {
+	display: inline-block;
+	padding: 1em;
+	vertical-align: top;
+	transition: color 0.3s;
+}
+
+.media-item__img {
+	max-width: 100%;
+	opacity: 0.8;
+	transition: opacity 0.3s;
+}
+
+.media-item:hover .media-item__img,
+.media-item:focus .media-item__img {
+	opacity: 1;
+}
+
+.media-item__title {
+	font-size: 1em;
+	margin: 0;
+	padding: 0.5em;
+}
+
+@media screen and (max-width: 40em) {
+	.codrops-header {
+		display: block;
+		text-align: center;
+	}
+}

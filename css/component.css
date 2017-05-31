@@ -1,0 +1,219 @@
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip__trigger {
+	cursor: pointer;
+	position: relative;
+}
+
+.tooltip__trigger-text {
+	display: block;
+	padding: 0.85em;
+	pointer-events: none;
+}
+
+.tooltip__base {
+	position: absolute;
+	bottom: 2em;
+	left: 50%;
+	margin-left: -150px;
+	width: 300px;
+	height: 200px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.tooltip__content {
+	color: #4a4a4a;
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	width: 65%;
+	padding: 0 1em;
+	opacity: 0;
+	font-size: 0.85em;
+}
+
+.tooltip__shape,
+.tooltip__deco {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.tooltip__shape {
+	fill: #141514;
+}
+
+/* Indivudual styles */
+
+/* Cora */
+.tooltip--cora .tooltip__base{
+	transform-origin: 50% 100%;
+}
+
+.tooltip--cora .tooltip__content {
+	margin-bottom: 1em;
+}
+
+/* Smaug */
+.tooltip--smaug .tooltip__base {
+	bottom: -0.5em;
+	transform-origin: 50% 100%;
+}
+
+.tooltip--smaug .tooltip__content {
+	padding: 0;
+}
+
+/* Dori */
+.tooltip--dori .tooltip__base {
+	bottom: -0.5em;
+}
+
+.tooltip--dori .tooltip__content {
+	margin: 0 0 1em;
+}
+
+/* Walda */
+.tooltip--walda .tooltip__base {
+	left: 0;
+	bottom: 0.75em;
+	position: absolute;
+	margin-left: 0;
+	width: 250px;
+	height: 100px;
+	padding: 0 0 0 0.25em;
+}
+
+.tooltip--walda .tooltip__trigger-text {
+	padding: 1em;
+}
+
+.tooltip--walda .tooltip__content {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	align-items: flex-start;
+	text-align: left;
+	font-size: 0.85em;
+	line-height: 2;
+	opacity: 1;
+	justify-content: flex-start;
+}
+
+.tooltip--walda .tooltip__letters span {
+	display: inline-block;
+	white-space: pre;
+	opacity: 0;
+}
+
+.tooltip--walda .tooltip__deco {
+	width: 4px;
+	height: 100%;
+	background: #141514;
+	transform-origin: 50% 100%;
+}
+
+/* Gram */
+.tooltip--gram .tooltip__base {
+	bottom: -0.5em;
+}
+
+/* Narvi */
+.path-narvi {
+	transform-origin: 200px 150px;
+}
+
+.tooltip--narvi .tooltip__content {
+	width: 80%;
+}
+
+/* Amras */
+.path-amras-1 {
+	transform-origin: 115px 111px;
+}
+
+.path-amras-2 {
+	transform-origin: 204px 107px;
+}
+
+.path-amras-3 {
+	transform-origin: 279px 66px;
+}
+
+.path-amras-4 {
+	transform-origin: 320px 99px;
+}
+
+.path-amras-5 {
+	transform-origin: 137px 199px;
+}
+
+.path-amras-6 {
+	transform-origin: 222px 217px;
+}
+
+.path-amras-7 {
+	transform-origin: 80px 168px;
+}
+
+.path-amras-8 {
+	transform-origin: 296px 211px;
+}
+
+.path-amras-9 {
+	transform-origin: 310px 167px;
+}
+
+/* Hador */
+.tooltip--hador .tooltip__base {
+	bottom: 2.25em;
+	margin-left: -115px;
+}
+
+.path-hador-1 {
+	transform-origin: 148px 284px;
+}
+
+.path-hador-2 {
+	transform-origin: 160px 268px;
+}
+
+.path-hador-3 {
+	transform-origin: 171px 246px;
+}
+
+.path-hador-4 {
+	transform-origin: 200px 120px;
+}
+
+.tooltip--hador .tooltip__content {
+	width: 50%;
+	margin: 0 0 2.5em;
+}
+
+/* Malva */
+.tooltip--malva .tooltip__content {
+	width: 50%;
+}
+
+/* Sadoc */
+.tooltip--sadoc .tooltip__base {
+	bottom: 2.5em;
+}
+
+.tooltip--sadoc .tooltip__shape path {
+	fill: #1d1f1e;
+	stroke: #5a5c5b;
+	stroke-width: 3px;
+}
+
