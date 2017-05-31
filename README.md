@@ -2,7 +2,7 @@
 
 Some little ideas for bouncy and playful tooltip shapes and animations with SVG and anime.js. Among other styles, we use shape morphing and transform.
 
-![Image Title](link)
+![Tooltip Animations](https://tympanus.net/codrops/wp-content/uploads/2017/05/TooltipAnimations.png)
 
 [Article on Codrops](https://tympanus.net/codrops/?p=31283)
 
