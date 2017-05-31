@@ -10,7 +10,7 @@ Some little ideas for bouncy and playful tooltip shapes and animations with SVG 
 
 ## Credits
 
-- [Anime.js](anime-js.com) by Julian Garnier
+- [Anime.js](https://github.com/juliangarnier/anime) by Julian Garnier
 - [Charming.js](https://github.com/yuanqing/charming) by Yuan Qing
 
 ## License
